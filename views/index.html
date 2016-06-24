@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="dogcity">
+  <head>
+    <meta charset="utf-8">
+    <title>Dogpound</title>
+    <script type="text/javascript" src="vendors/angular.min.js"></script>
+    <script type="text/javascript" src="scripts/clientApp.js"></script>
+  </head>
+  <body>
+
+    <h1>Welcome to the dogpound</h1>
+
+    <p> Add a dog below. </p>
+  <div ng-controller="dogpound">
+    <input type="text" value="" ng-model="name" placeholder="Dog Name"/>
+    <input type="text" value="" ng-model="breed" placeholder="Dog Breed"/>
+    <button ng-click="addDog()">Add this dog</button>
+  </div>
+
+  </body>
+</html>
